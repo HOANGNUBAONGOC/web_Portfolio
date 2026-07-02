@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Portfolio – Hoàng Nữ Bảo Ngọc</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ 
+</head>
+
+<body class="inter">
+  <div class="h-[140px]"></div>
+
+<!-- FIXED HEADER -->
+<header id="main-header"
+  class="fixed top-0 left-0 w-full z-50 bg-[var(--cream)]/80 backdrop-blur-md shadow-sm 
+         transition-all duration-300 ease-in-out flex items-center justify-between 
+         pt-6 pb-5 px-[100px]">
+
+  <!-- LOGO + TEXT -->
+  <div class="fredoka text-[46px] sm:text-[54px] font-bold text-[var(--navy)] leading-tight">
+    <div class="relative inline-block">
+      <span class="absolute -top-3 -left-4 text-[15px] font-bold text-white px-2 py-1 rounded-full"
+            style="background:var(--pink);">2025</span>
+      Portfolio
+    </div>
+    <div class="text-sm font-semibold mt-1">
+      <span class="text-[var(--ink)]">Hoàng Nữ Bảo Ngọc</span>
+      <span class="mx-2">|</span>
+      <span class="text-[var(--ink)]">IT Student – Networking & Cybersecurity</span>
+    </div>
+  </div>
+
+  <!-- NAV MENU -->
+  <nav class="flex gap-8 fredoka text-[18px] font-medium text-[var(--navy)]">
+    <a href="#about" class="hover:text-[var(--pink)] transition">About</a>
+    <a href="#education" class="hover:text-[var(--pink)] transition">Education</a>
+    <a href="#skills" class="hover:text-[var(--pink)] transition">Skills</a>
+    <a href="#projects" class="hover:text-[var(--pink)] transition">Projects</a>
+    <a href="#contact" class="hover:text-[var(--pink)] transition">Contact</a>
+  </nav>
+</header>
+
+
+<!-- RIBBON -->
+<div class="ribbon bg-[var(--navy)] text-white fredoka text-lg font-bold tracking-wide overflow-hidden whitespace-nowrap">
+  <div class="marquee inline-block py-3">
+    <pre>ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • </pre>
+  </div>
+  <div class="marquee inline-block py-3" aria-hidden="true">
+    <pre>ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • </pre>
+  </div>
+</div>
+
+<div class="content">
+  
+<!-- INTRO SECTION -->
+<section id="about" class="py-16 grid md:grid-cols-2 gap-14 items-start">
+  <div class="relative flex flex-col items-center">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[360px] sm:h-[360px] blob animate-blob opacity-90 blur-[1px]"></div>
+    <div class="relative rounded-[32px] overflow-hidden border-4 border-white soft-shadow w-[270px] sm:w-[320px] z-10">
+      <img src="avatar.png" alt="Profile Photo – Hoàng Nữ Bảo Ngọc" class="w-full h-[340px] object-cover" />
+    </div>
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-3 z-20">
+      <span class="badge"><span class="star"></span> Da Nang, Vietnam</span>
+      <span class="badge"><span class="star"></span> VKU – Cybersecurity</span>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="fredoka text-[56px] text-[var(--navy)] leading-[1] mb-2">Hi there!</h2>
+    <p class="mb-3 leading-relaxed">
+  I’m <strong>Hoàng Nữ Bảo Ngọc</strong>, an Information Technology student majoring in <strong>Networking and Cybersecurity</strong>.
+  <br>I’m passionate about securing systems, identifying vulnerabilities, and hardening servers to build resilient infrastructures.
+  I also focus on the human aspects of cybersecurity — raising user awareness, because a strong system is only as good as the people behind it.
+</p>
+
+<p class="mb-3 leading-relaxed">
+  🌐 <strong>Career Goal:</strong><br>
+  To become a skilled <strong>Security Engineer</strong> capable of designing and implementing intuitive, efficient, and secure digital solutions.
+  <br><br>
+  ✨ I’m walking toward my dream with faith and determination — learning, failing, improving, and rising again.
+  <strong>Every small step I take brings me closer to becoming the person I’ve always wanted to be.</strong>
+</p>
+
+
+    <h4 class="font-semibold text-[var(--navy)] mt-6 mb-3">Contact</h4>
+    <ul class="space-y-2 text-[var(--navy)]">
+      <li><span class="text-[var(--pink)] font-bold">*</span> <a href="mailto:ngochnbb05@gmail.com">ngochnbb05@gmail.com</a></li>
+      <li><span class="text-[var(--pink)] font-bold">*</span> +84    775457834</li>
+      <li><span class="text-[var(--pink)] font-bold">*</span><a href="https://github.com/HOANGNUBAONGOC" target="_blank"> github.com</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION & SOFT SKILLS -->
+<section id="education" class="py-16 grid md:grid-cols-[1.2fr_.8fr] gap-12" id="education">
+  <div class="soft-shadow rounded-3xl overflow-hidden">
+    <div class="bg-[var(--pink)] text-white fredoka text-2xl px-6 py-4">EDUCATION</div>
+    <div class="bg-[var(--navy)] text-white p-6">
+      <div class="mb-6">
+        <div class="text-sm opacity-90">2023 – Present</div>
+        <div class="font-semibold">VKU – Vietnam-Korea University of Information and Communication Technology</div>
+        <div>Major: Networking & Cybersecurity</div>
+      </div>
+
+      <div class="flex flex-wrap justify-between gap-6">
+        <div class="w-[48%]">
+          <div class="fredoka font-semibold mb-2">LANGUAGES</div>
+          <ul class="space-y-1 text-sm">
+            <li>• English</li>
+            <li>• Vietnamese</li>
+          </ul>
+        </div>
+
+        <div class="w-[48%]">
+          <div class="fredoka font-semibold mb-2">SOFT SKILLS</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white text-[var(--navy)] rounded-full text-xs font-semibold">Teamwork</span>
+            <span class="px-3 py-1 bg-[var(--pink)] text-white rounded-full text-xs font-semibold">Adaptability</span>
+            <span class="px-3 py-1 bg-white text-[var(--navy)] rounded-full text-xs font-semibold">Creativity</span>
+            <span class="px-3 py-1 bg-[var(--pink)] text-white rounded-full text-xs font-semibold">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- SOFTWARE SKILLS -->
+    <section id="skills" class="py-10">
+      <h2 class="fredoka text-[32px] text-[var(--navy)] font-bold mb-6">Technical Skills</h2>
+
+      <div class="space-y-5 max-w-xl">
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium text-[var(--ink)]">HTML & CSS</span>
+            <span class="text-[var(--navy)] font-semibold">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="90"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium text-[var(--ink)]">Python</span>
+            <span class="text-[var(--navy)] font-semibold">50%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div class="progress-bar bg-[var(--pink)] h-3 rounded-full" data-progress="50"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium text-[var(--ink)]">Java</span>
+            <span class="text-[var(--navy)] font-semibold">70%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="70"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium text-[var(--ink)]">Kotlin</span>
+            <span class="text-[var(--navy)] font-semibold">60%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div class="progress-bar bg-[var(--pink)] h-3 rounded-full" data-progress="60"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-medium text-[var(--ink)]">Network Device Configuration</span>
+            <span class="text-[var(--navy)] font-semibold">60%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="60"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<br><br><br><br>
+
+<!-- PROJECTS SECTION -->
+<div class="bg-[var(--pink)] w-full flex justify-center items-center py-6 rounded-t-2xl shadow-md">
+  <span class="fredoka text-white font-bold text-[22px] tracking-wide text-center">
+    PROJECTS I HAVE DONE
+  </span>
+</div>
+
+<section id="projects" class="py-16 bg-[#FBF7F3]">
+  <div class="max-w-9xl mx-auto px-[60px]">
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
+        <img src="1.png" alt="Micasa Flower Shop" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Micasa Flower Shop</h3>
+        <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
+          An e-commerce website that allows users to shop for beautiful flower gifts for their loved ones.
+          <br><strong>Tech stack:</strong> HTML, CSS, JavaScript
+        </p>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+      </div>
+
+      <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
+        <img src="2.png" alt="Fashion Shop" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Fashion Shop</h3>
+        <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
+          A fashion e-commerce website offering clothes, accessories, and footwear.
+          <br><strong>Tech stack:</strong> HTML, CSS, JavaScript, phpMyAdmin
+        </p>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+      </div>
+     
+      <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
+        <img src="3.png" alt="Ticket Booking App" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Flight Booking App</h3>
+        <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
+          An Android app that lets users search and book flights from multiple airlines with a clean and intuitive interface.
+          <br><strong>Tech stack:</strong> Kotlin, Firebase
+        </p>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br><br>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20 bg-gradient-to-br from-[var(--navy)] via-[#36479c] to-[var(--pink)] text-white">
+  <div class="max-w-9xl mx-auto px-[100px] grid md:grid-cols-2 gap-14 items-start">
+
+    <!-- CONTACT FORM -->
+    <div class="bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-xl flex flex-col justify-between opacity-0 translate-y-8 transition-all duration-1000 ease-out contact-fade">
+      <div>
+        <h2 class="fredoka text-3xl font-bold mb-2 text-white">Let's Talk 💭</h2>
+        <p class="text-white/80 mb-6 text-sm">Please fill in your information below:</p>
+
+        <form action="https://formspree.io/f/xrewybjb" method="POST" class="grid md:grid-cols-[1fr_1.3fr] gap-6">
+          <div class="flex flex-col gap-4">
+            <div>
+              <label class="block mb-1 text-sm font-semibold">Full Name <span class="text-[var(--pink)]">*</span></label>
+              <input type="text" name="Full Name" placeholder="Enter your name" required
+                     class="w-full px-4 py-2 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
+                     focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition" />
+            </div>
+
+            <div>
+              <label class="block mb-1 text-sm font-semibold">Email <span class="text-[var(--pink)]">*</span></label>
+              <input type="email" name="Email" placeholder="Enter your email" required
+                     class="w-full px-4 py-2 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
+                     focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition" />
+            </div>
+
+            <div>
+              <label class="block mb-1 text-sm font-semibold">Phone</label>
+              <input type="text" name="Phone" placeholder="Enter your phone number"
+                     class="w-full px-4 py-2 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
+                     focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition" />
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full">
+            <label class="block mb-1 text-sm font-semibold">Message</label>
+            <textarea name="Message" rows="11" placeholder="Write your message here..."
+                      class="flex-grow px-4 py-3 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
+                      focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition resize-none h-full"></textarea>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <div class="col-span-2 mt-8 flex justify-center">
+            <button type="submit"
+                    class="bg-[var(--pink)] hover:bg-[#ff85b5] text-white px-8 py-2 rounded-full font-bold transition duration-300 shadow-md flex items-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="flex flex-col justify-center space-y-10 opacity-0 translate-y-8 transition-all duration-1000 ease-out contact-fade delay-[200ms]">
+      <div class="flex items-center gap-5 bg-white/10 p-4 rounded-2xl shadow-md hover:bg-white/20 transition">
+        <div class="w-14 h-14 bg-[var(--pink)] rounded-xl flex items-center justify-center text-white text-2xl">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div>
+          <div class="text-sm text-white/70">EMAIL</div>
+          <div class="text-lg font-semibold"><a href="mailto:hoangnubaongoc05@gmail.com">ngochnbb05@gmail.com</a></div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-5 bg-white/10 p-4 rounded-2xl shadow-md hover:bg-white/20 transition">
+        <div class="w-14 h-14 bg-[var(--navy)] rounded-xl flex items-center justify-center text-white text-2xl">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div>
+          <div class="text-sm text-white/70">LOCATION</div>
+          <div class="text-lg font-semibold">Da Nang, Vietnam</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-5 bg-white/10 p-4 rounded-2xl shadow-md hover:bg-white/20 transition">
+        <div class="w-14 h-14 bg-white text-[var(--navy)] rounded-xl flex items-center justify-center text-2xl font-bold">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <div class="text-sm text-white/70">PHONE</div>
+          <div class="text-lg font-semibold">+84 775457834</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-600 py-6 text-m">
+  © 2025 Hoàng Nữ Bảo Ngọc · Portfolio · Nice To Meet You
+</footer>
+
+<script>
+  // Animate progress bars
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".progress-bar");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const value = bar.getAttribute("data-progress");
+          bar.style.width = value + "%";
+          bar.style.transition = "width 1.5s ease-in-out";
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.4 });
+    bars.forEach(bar => {
+      bar.style.width = "0%";
+      observer.observe(bar);
+    });
+  });
+
+  // Fade-in effect for contact section
+  const contactObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        entry.target.classList.add("opacity-100", "translate-y-0");
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll(".contact-fade").forEach(el => contactObserver.observe(el));
+</script>
+
+<script>
+  // Thêm/loại class "scrolled" khi cuộn
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("main-header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
+  // Cuộn mượt đến phần tương ứng và highlight menu đang active
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("text-[var(--pink)]", "font-semibold");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("text-[var(--pink)]", "font-semibold");
+      }
+    });
+  });
+</script>
+
+<script>
+  // Kích hoạt hiệu ứng fade-up khi project xuất hiện trên màn hình
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeUps = document.querySelectorAll(".fade-up");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeUps.forEach(el => observer.observe(el));
+  });
+</script>
+
+<!-- Center Popup Notification -->
+<div id="toast" class="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden z-[9999]">
+ <div id="toast-content"
+     class="bg-[var(--pink)] text-white px-10 py-6 rounded-2xl text-xl font-semibold shadow-2xl transform scale-90 opacity-0 transition-all duration-300 text-center">
+  <p>🎉 Message sent successfully! 
+    <br>I will reply to your email soon. <br>⋆. 𐙚˚࿔ LOVE U 𝜗𝜚˚⋆</p>
+
+</div>
+
+</div>
+
+<!-- Confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<script>
+  const form = document.querySelector("form");
+  const toast = document.getElementById("toast");
+  const toastContent = document.getElementById("toast-content");
+
+  function showToast(text, bgClass = "bg-[var(--pink)]") {
+    toastContent.innerHTML = text;
+    toast.classList.remove("hidden");
+    toastContent.className = `text-white px-10 py-6 rounded-2xl text-xl font-semibold shadow-2xl transform scale-90 opacity-0 transition-all duration-300 ${bgClass}`;
+    // fade & scale in
+    requestAnimationFrame(() => {
+      toastContent.classList.remove("scale-90", "opacity-0");
+      toastContent.classList.add("scale-100", "opacity-100");
+    });
+
+    // hide after 3s
+    setTimeout(() => {
+      toastContent.classList.remove("opacity-100");
+      toastContent.classList.add("opacity-0");
+      setTimeout(() => toast.classList.add("hidden"), 300);
+    }, 3000);
+  }
+
+  function burstConfetti() {
+    confetti({
+      particleCount: 120,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ["#ff4fa3", "#ffd166", "#60a5fa", "#ffffff"]
+    });
+    confetti({
+      particleCount: 80,
+      spread: 100,
+      scalar: 0.9,
+      origin: { y: 0.5, x: 0.2 },
+      colors: ["#ff4fa3", "#ffd166", "#60a5fa"]
+    });
+    confetti({
+      particleCount: 80,
+      spread: 100,
+      scalar: 0.9,
+      origin: { y: 0.5, x: 0.8 },
+      colors: ["#ff4fa3", "#ffd166", "#60a5fa"]
+    });
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.classList.add("opacity-60");
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        if (response.ok) {
+            showToast(`
+            <p>🎉 Message sent successfully!<br>
+             I will reply to your email soon<br>
+            ⋆ ✿⋆ 𐙚˚࿔ ♡︎ LOVE U ♡︎ 𝜗𝜚 ⋆✿˚♡︎</p>
+                           `);
+  burstConfetti();
+  form.reset();
+}
+
+        burstConfetti();
+        form.reset();
+      } else {
+        showToast("❌ Failed to send message. Please try again.", "bg-red-500");
+      }
+    } catch (error) {
+      console.error(error);
+      showToast("❌ Network error. Please try again later.", "bg-red-500");
+    } finally {
+      btn.disabled = false;
+      btn.classList.remove("opacity-60");
+    }
+  });
+</script>
+
+
+</body>
+</html>
