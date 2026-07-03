@@ -3,7 +3,7 @@ html {
 }
 @media (min-width: 1024px) {
 html {
-font-size: 80%; /* Giảm toàn bộ kích thước text, padding, margin xuống 80% */
+font-size: 100%; 
 }
 }
 
@@ -44,8 +44,8 @@ section {
       --ink: #1F2340;
     }
     .content{
-      padding-left: 150px;
-      padding-right: 150px;
+      padding-left: 60px;
+      padding-right: 60px;
     }
     html, body {
       background: var(--cream);
@@ -122,6 +122,125 @@ section {
 
     .soft-shadow { box-shadow: 0 8px 30px rgba(23, 59, 134, .08); }
     /* Hiệu ứng xuất hiện mượt */
+    /* ================= EDUCATION ================= */
+
+
+.edu-divider{
+
+    height:1px;
+
+    margin:35px 0;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+}
+
+.skill-bg{
+
+    width:100%;
+    height:10px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#D9D9D9;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    border-radius:999px;
+
+}
+
+.soft-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.soft-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:white;
+
+    color:var(--navy);
+
+    font-weight:600;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.soft-tags span:nth-child(even){
+
+    background:var(--pink);
+
+    color:white;
+
+}
+
+.soft-tags span:hover{
+
+    transform:translateY(-4px);
+
+}
+body.dark .profile-card{
+
+    background:#3A001B;
+
+    border:1px solid rgba(224,46,110,.25);
+
+}
+
+body.dark .edu-divider{
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(224,46,110,.35),
+        transparent
+    );
+
+}
+
+body.dark .skill-bg{
+
+    background:#5A1D3C;
+
+}
+
+body.dark .soft-tags span{
+
+    background:#4A1232;
+
+    color:white;
+
+}
+
+body.dark .soft-tags span:nth-child(even){
+
+    background:#E02E6E;
+
+}
+
 .fade-up {
   opacity: 0;
   transform: translateY(60px);
@@ -131,4 +250,651 @@ section {
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* =======================================================
+                    DARK MODE
+======================================================= */
+
+body{
+    transition:background .4s,color .4s;
+}
+
+*{
+    transition:
+    background-color .35s,
+    color .35s,
+    border-color .35s,
+    box-shadow .35s;
+}
+
+/*================ Variables ================*/
+
+body.dark{
+
+    --cream:#060815;
+    --navy:#F7F7F8;
+    --ink:#E6E6EC;
+    --pink:#E02E6E;
+
+    background:#060815;
+    color:#E6E6EC;
+
+}
+
+
+/*================ Header ================*/
+
+body.dark header{
+
+    background:rgba(6,8,21,.92);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(224,46,110,.18);
+
+}
+
+
+/*================ Ribbon ================*/
+
+body.dark .ribbon{
+
+    background:#3A001B !important;
+    color:white;
+
+}
+
+
+/*================ About ================*/
+
+body.dark .badge{
+
+    background:#3A001B;
+    border:1px solid #990052;
+    color:white;
+
+}
+
+body.dark .blob{
+
+    background:linear-gradient(
+        135deg,
+        #990052,
+        #E02E6E
+    );
+
+}
+
+
+/*================ Education ================*/
+
+body.dark .soft-shadow{
+
+    background:#3A001B;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
+
+}
+
+body.dark #education .bg-\[var\(--navy\)\]{
+
+    background:#3A001B !important;
+
+}
+
+body.dark #education .bg-\[var\(--pink\)\]{
+
+    background:#E02E6E !important;
+
+}
+
+
+/*================ Skills ================*/
+
+body.dark .bg-gray-200{
+
+    background:#4C1130 !important;
+
+}
+
+body.dark .progress-bar{
+
+    background:#E02E6E !important;
+
+}
+
+body.dark #skills span{
+
+    color:#F4F4F5;
+
+}
+
+
+/*================ Projects ================*/
+
+body.dark #projects{
+
+    background:#060815 !important;
+
+}
+
+body.dark .project-card{
+
+    background:#3A001B;
+    color:white;
+
+    border:1px solid rgba(224,46,110,.18);
+
+}
+
+body.dark .project-card:hover{
+
+    background:#67003A;
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(224,46,110,.18);
+
+}
+
+body.dark .project-card p{
+
+    color:#E4E4EA;
+
+}
+
+body.dark .project-card h3{
+
+    color:white;
+
+}
+
+
+/*================ Contact ================*/
+
+body.dark #contact{
+
+    background:linear-gradient(
+    135deg,
+    #060815,
+    #3A001B,
+    #67003A
+    );
+
+}
+
+body.dark input,
+body.dark textarea{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(224,46,110,.2);
+
+}
+
+body.dark input:focus,
+body.dark textarea:focus{
+
+    border-color:#E02E6E;
+
+}
+
+
+/*================ Footer ================*/
+
+body.dark footer{
+
+    background:#060815;
+    color:#CFCFD5;
+
+}
+
+
+/*================ Theme Button ================*/
+
+body.dark #themeToggle{
+
+    background:#3A001B;
+    color:white;
+
+    border:1px solid rgba(224,46,110,.3);
+
+}
+
+body.dark #themeToggle:hover{
+
+    background:#67003A;
+
+}
+
+
+/*================ Hover Image ================*/
+
+body.dark #about img{
+
+    box-shadow:
+    0 15px 45px rgba(224,46,110,.18);
+
+}
+
+
+/*================ Scroll Header ================*/
+
+body.dark .scrolled{
+
+    background:rgba(6,8,21,.95);
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.45);
+
+}
+
+/*thêm about*/
+.hero-icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+
+    font-size:26px;
+
+    color:var(--navy);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.hero-icon:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--pink);
+
+    color:white;
+
+}
+
+/*================ Hero Icon Dark ================*/
+
+body.dark .hero-icon{
+
+    background:#3A001B;
+    color:#FFD6E6;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.35);
+
+}
+
+body.dark .hero-icon:hover{
+
+    background:#E02E6E;
+    color:white;
+
+}
+
+#about h1{
+
+    letter-spacing:-4px;
+
+}
+
+#about{
+
+    position:relative;
+    margin-left: 160px;
+}
+
+#about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(255,108,168,.15),
+    transparent 70%);
+
+    top:-180px;
+    left:-200px;
+
+    z-index:-1;
+
+}
+
+#about::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(23,59,134,.08),
+    transparent 70%);
+
+    right:-100px;
+    bottom:-100px;
+
+    z-index:-1;
+
+}
+/*================ Floating Card ================*/
+
+.floating-card{
+    transition: .35s;
+}
+
+body.dark .floating-card{
+
+    background:#3A001B !important;
+
+    border:1px solid rgba(224,46,110,.25);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.4);
+
+}
+
+body.dark .floating-card .fredoka{
+
+    color:#FFE2EC !important;
+
+}
+
+body.dark .floating-card .text-\[var\(--pink\)\]{
+
+    color:#FF6FA8 !important;
+
+}
+
+/* hiệu ứng nền */
+/* ==========================
+      Animated Background
+========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-10;
+    pointer-events:none;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255,108,168,.18), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(23,59,134,.10), transparent 35%),
+        radial-gradient(circle at 45% 90%, rgba(255,180,210,.15), transparent 30%);
+
+    animation:bgMove 18s ease-in-out infinite;
+}
+
+@keyframes bgMove{
+
+    0%,100%{
+        transform:translate(0,0) scale(1);
+    }
+
+    50%{
+        transform:translate(30px,-25px) scale(1.05);
+    }
+
+}
+body.dark::before{
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(224,46,110,.15), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(255,255,255,.05), transparent 35%),
+        radial-gradient(circle at 50% 90%, rgba(224,46,110,.10), transparent 28%);
+
+}
+
+/* ================= Cursor Glow ================= */
+
+.cursor-glow{
+    position: fixed;
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 0;
+
+    background: radial-gradient(
+        circle,
+        rgba(255,108,168,.18) 0%,
+        rgba(255,108,168,.10) 35%,
+        transparent 75%
+    );
+
+    transform: translate(-50%, -50%);
+    transition:
+        left .15s ease-out,
+        top .15s ease-out;
+}
+.content,
+header,
+.ribbon,
+footer{
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* =========================
+      Soap Bubble Effect
+========================= */
+
+#about{
+    position: relative;
+    overflow: hidden;      /* Quan trọng */
+}
+
+.bubbles{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:5;
+}
+
+#about > *:not(.bubbles){
+    position:relative;
+    z-index:2;
+}
+
+.bubble{
+    position: absolute;
+    bottom: -80px;
+}
+
+
+.bubble{
+    position:absolute;
+    bottom:-80px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle at 30% 30%,
+            rgba(255,255,255,.95) 0%,
+            rgba(255,255,255,.45) 20%,
+            transparent 45%
+        ),
+        conic-gradient(
+            from 0deg,
+            rgba(255,0,128,.35),
+            rgba(255,180,0,.35),
+            rgba(0,220,255,.35),
+            rgba(120,255,120,.35),
+            rgba(160,120,255,.35),
+            rgba(255,0,180,.35)
+        );
+
+    backdrop-filter: blur(5px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,.8),
+        inset -10px -10px 20px rgba(255,255,255,.25),
+        0 0 18px rgba(255,170,220,.25);
+
+    animation: floatBubble linear infinite;
+}
+
+.bubble{
+    position:absolute;
+    bottom:-80px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    /* Phần trong suốt của bong bóng */
+    background:
+        radial-gradient(circle at 28% 28%,
+            rgba(255,255,255,.95) 0%,
+            rgba(255,255,255,.7) 8%,
+            rgba(255,255,255,.15) 20%,
+            rgba(255,255,255,.05) 45%,
+            rgba(255,255,255,.02) 70%,
+            transparent 100%
+        );
+
+    border:2px solid rgba(255,255,255,.75);
+
+    backdrop-filter:blur(3px);
+
+    box-shadow:
+        inset 0 0 18px rgba(255,255,255,.7),
+        inset -8px -8px 16px rgba(255,255,255,.2),
+        0 6px 18px rgba(255,180,220,.18);
+
+    animation:floatBubble linear infinite;
+}
+
+@keyframes floatBubble{
+
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.9;
+    }
+
+    100%{
+        transform:translateY(-950px);
+        opacity:0;
+    }
+
+}
+
+@keyframes floatBubble{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-900px) rotate(18deg);
+        opacity:0;
+    }
+
+}
+
+.bubble::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    border-radius:50%;
+
+    background:
+        conic-gradient(
+            from 0deg,
+            #ff5aa5,
+            #ffd85b,
+            #68f2ff,
+            #71ffb0,
+            #87a7ff,
+            #d17cff,
+            #ff5aa5
+        );
+
+    opacity:.85;
+
+    /* Chỉ để màu xuất hiện sát viền */
+    -webkit-mask:
+        radial-gradient(circle,
+            transparent 62%,
+            #000 72%,
+            #000 100%);
+    mask:
+        radial-gradient(circle,
+            transparent 62%,
+            #000 72%,
+            #000 100%);
+}
+
+.bubble::after{
+
+    content:"";
+    position:absolute;
+
+    width:28%;
+    height:28%;
+
+    top:14%;
+    left:18%;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    filter:blur(3px);
+
+    transform:rotate(-20deg);
+
+}
+
+body.dark .bubble{
+
+    background:radial-gradient(
+        circle at 30% 30%,
+        rgba(255,255,255,.45),
+        rgba(224,46,110,.20) 45%,
+        rgba(224,46,110,.10) 75%,
+        transparent
+    );
+
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,.3),
+        0 0 18px rgba(224,46,110,.25);
+
 }

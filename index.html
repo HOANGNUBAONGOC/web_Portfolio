@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="theme-color" content="#FBF7F3">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -9,6 +10,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -17,7 +19,9 @@
 </head>
 
 <body class="inter">
-  <div class="h-[140px]"></div>
+    
+    <div class="cursor-glow"></div>
+    <div class="h-[140px]"s></div>
 
 <!-- FIXED HEADER -->
 <header id="main-header"
@@ -29,7 +33,7 @@
   <div class="fredoka text-[46px] sm:text-[54px] font-bold text-[var(--navy)] leading-tight">
     <div class="relative inline-block">
       <span class="absolute -top-3 -left-4 text-[15px] font-bold text-white px-2 py-1 rounded-full"
-            style="background:var(--pink);">2025</span>
+            style="background:var(--pink);">2026</span>
       Portfolio
     </div>
     <div class="text-sm font-semibold mt-1">
@@ -41,11 +45,38 @@
 
   <!-- NAV MENU -->
   <nav class="flex gap-8 fredoka text-[18px] font-medium text-[var(--navy)]">
-    <a href="#about" class="hover:text-[var(--pink)] transition">About</a>
-    <a href="#education" class="hover:text-[var(--pink)] transition">Education</a>
-    <a href="#skills" class="hover:text-[var(--pink)] transition">Skills</a>
-    <a href="#projects" class="hover:text-[var(--pink)] transition">Projects</a>
-    <a href="#contact" class="hover:text-[var(--pink)] transition">Contact</a>
+    <a href="#about" class="hover:text-[var(--pink)] transition">Giới thiệu</a>
+    <a href="#education" class="hover:text-[var(--pink)] transition">Học vấn</a>
+    <a href="#skills" class="hover:text-[var(--pink)] transition">Kỹ năng</a>
+    <a href="#projects" class="hover:text-[var(--pink)] transition">Dự án cá nhân</a>
+    <a href="#contact" class="hover:text-[var(--pink)] transition">Liên hệ</a>
+     <!-- Language -->
+ <button id="langToggle"
+class="ml-4 w-12 h-10 rounded-full
+bg-white border border-gray-200 shadow-md
+flex items-center justify-center gap-1
+text-gray-800
+hover:scale-110
+transition duration-300">
+
+    🌐
+    <span id="langFlag">🇻🇳</span>
+
+</button>
+
+  <!-- Theme -->
+  <button id="themeToggle"
+    class="w-10 h-10 rounded-full
+           border border-gray-300
+           bg-white
+           flex items-center justify-center
+           hover:bg-[var(--navy)]
+           hover:text-white
+           transition duration-300">
+
+    <i class="fa-solid fa-moon"></i>
+
+  </button>
   </nav>
 </header>
 
@@ -53,186 +84,486 @@
 <!-- RIBBON -->
 <div class="ribbon bg-[var(--navy)] text-white fredoka text-lg font-bold tracking-wide overflow-hidden whitespace-nowrap">
   <div class="marquee inline-block py-3">
-    <pre>ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • </pre>
+    <pre> • Life is like a perfect code: it might have a few bugs, but it's beautiful when it runs                                                </pre>
   </div>
   <div class="marquee inline-block py-3" aria-hidden="true">
-    <pre>ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • ABOUT ME • </pre>
+    <pre> • Life is like a perfect code: it might have a few bugs, but it's beautiful when it runs • </pre>
   </div>
 </div>
 
 <div class="content">
   
 <!-- INTRO SECTION -->
-<section id="about" class="py-16 grid md:grid-cols-2 gap-14 items-start">
-  <div class="relative flex flex-col items-center">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[360px] sm:h-[360px] blob animate-blob opacity-90 blur-[1px]"></div>
-    <div class="relative rounded-[32px] overflow-hidden border-4 border-white soft-shadow w-[270px] sm:w-[320px] z-10">
-      <img src="avatar.png" alt="Profile Photo – Hoàng Nữ Bảo Ngọc" class="w-full h-[340px] object-cover" />
+<!-- HERO -->
+
+<section id="about"
+class="-mt-[50px] py-24 grid lg:grid-cols-2 gap-12 items-center">
+<div class="bubbles"></div>
+    <!-- LEFT -->
+    <div>
+
+        <h1
+        class="fredoka
+        leading-none
+        text-[92px]
+        lg:text-[118px]
+        font-bold
+        text-[var(--navy)]">
+
+            Hoàng Nữ
+
+            <br>
+
+            <span
+            class="text-[var(--pink)]">
+                Bảo Ngọc
+            </span>
+
+        </h1>
+
+        <!-- Quote -->
+
+        <div
+        class="mt-10
+        border-l-4
+        border-[var(--pink)]
+        pl-7">
+
+            <p
+            class="italic
+            text-2xl
+            leading-relaxed">
+
+                "Xây dựng các hệ thống bảo mật không chỉ là về công nghệ.
+<br>Đó còn là câu chuyện bảo vệ con người,
+dữ liệu,
+và niềm tin." </p>
+
+        </div>
+
+        <!-- Description -->
+
+        <p
+        class="mt-8
+        text-lg
+        leading-9
+        max-w-xl">
+
+           Mình là một sinh viên ngành Công nghệ thông tin chuyên ngành
+<b>Mạng & An ninh mạng</b>.
+
+Mình đam mê tìm hiểu về bảo mật hệ thống,
+tối ưu bảo mật máy chủ (server hardening),
+phòng thủ mạng,
+và phát triển web.
+
+Mục tiêu của mình là trở thành một
+<span class="text-[var(--pink)] font-semibold">
+    Kỹ sư Bảo mật
+</span>
+ 
+        </p>
+
+        <!-- Buttons -->
+
+        <div class="mt-10 flex gap-5">
+
+            <a
+            href="#projects"
+            class="px-8 py-3
+            rounded-full
+            bg-[var(--pink)]
+            text-white
+            font-semibold
+            hover:scale-105
+            duration-300">
+
+                Xem dự án
+
+            </a>
+
+            <a
+            href="#contact"
+            class="px-8 py-3
+            rounded-full
+            border-2
+            border-[var(--navy)]
+            hover:bg-[var(--navy)]
+            hover:text-white
+            duration-300">
+
+                Liên hệ
+
+            </a>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="flex gap-6 mt-14">
+
+            <a href="#">
+                <div class="hero-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="hero-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="hero-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="hero-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </a>
+
+        </div>
+
     </div>
-    <div class="mt-6 flex flex-wrap items-center justify-center gap-3 z-20">
-      <span class="badge"><span class="star"></span> Da Nang, Vietnam</span>
-      <span class="badge"><span class="star"></span> VKU – Cybersecurity</span>
+
+    <!-- RIGHT -->
+
+    <div class="relative flex justify-center">
+
+       <!-- RIGHT -->
+<div class="relative flex justify-center items-center translate-x-16"-200>
+
+    <!-- Pink Blob -->
+    <div
+        class="absolute
+        top-1/2
+        right-[-80px]
+        -translate-y-[35%]
+        w-[540px]
+        h-[540px]
+        blob
+        animate-blob
+        opacity-80
+        z-0">
     </div>
-  </div>
 
-  <div>
-    <h2 class="fredoka text-[56px] text-[var(--navy)] leading-[1] mb-2">Hi there!</h2>
-    <p class="mb-3 leading-relaxed">
-  I’m <strong>Hoàng Nữ Bảo Ngọc</strong>, an Information Technology student majoring in <strong>Networking and Cybersecurity</strong>.
-  <br>I’m passionate about securing systems, identifying vulnerabilities, and hardening servers to build resilient infrastructures.
-  I also focus on the human aspects of cybersecurity — raising user awareness, because a strong system is only as good as the people behind it.
-</p>
+    <!-- Image -->
+  <div
+    class="relative
+    bg-white
+    rounded-[45px]
+    p-5
+    shadow-2xl
+    z-10
+    photo-card">
 
-<p class="mb-3 leading-relaxed">
-  🌐 <strong>Career Goal:</strong><br>
-  To become a skilled <strong>Security Engineer</strong> capable of designing and implementing intuitive, efficient, and secure digital solutions.
-  <br><br>
-  ✨ I’m walking toward my dream with faith and determination — learning, failing, improving, and rising again.
-  <strong>Every small step I take brings me closer to becoming the person I’ve always wanted to be.</strong>
-</p>
-
-
-    <h4 class="font-semibold text-[var(--navy)] mt-6 mb-3">Contact</h4>
-    <ul class="space-y-2 text-[var(--navy)]">
-      <li><span class="text-[var(--pink)] font-bold">*</span> <a href="mailto:ngochnbb05@gmail.com">ngochnbb05@gmail.com</a></li>
-      <li><span class="text-[var(--pink)] font-bold">*</span> +84    775457834</li>
-      <li><span class="text-[var(--pink)] font-bold">*</span><a href="https://github.com/HOANGNUBAONGOC" target="_blank"> github.com</a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- EDUCATION & SOFT SKILLS -->
-<section id="education" class="py-16 grid md:grid-cols-[1.2fr_.8fr] gap-12" id="education">
-  <div class="soft-shadow rounded-3xl overflow-hidden">
-    <div class="bg-[var(--pink)] text-white fredoka text-2xl px-6 py-4">EDUCATION</div>
-    <div class="bg-[var(--navy)] text-white p-6">
-      <div class="mb-6">
-        <div class="text-sm opacity-90">2023 – Present</div>
-        <div class="font-semibold">VKU – Vietnam-Korea University of Information and Communication Technology</div>
-        <div>Major: Networking & Cybersecurity</div>
-      </div>
-
-      <div class="flex flex-wrap justify-between gap-6">
-        <div class="w-[48%]">
-          <div class="fredoka font-semibold mb-2">LANGUAGES</div>
-          <ul class="space-y-1 text-sm">
-            <li>• English</li>
-            <li>• Vietnamese</li>
-          </ul>
-        </div>
-
-        <div class="w-[48%]">
-          <div class="fredoka font-semibold mb-2">SOFT SKILLS</div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-white text-[var(--navy)] rounded-full text-xs font-semibold">Teamwork</span>
-            <span class="px-3 py-1 bg-[var(--pink)] text-white rounded-full text-xs font-semibold">Adaptability</span>
-            <span class="px-3 py-1 bg-white text-[var(--navy)] rounded-full text-xs font-semibold">Creativity</span>
-            <span class="px-3 py-1 bg-[var(--pink)] text-white rounded-full text-xs font-semibold">Problem-solving</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- SOFTWARE SKILLS -->
-    <section id="skills" class="py-10">
-      <h2 class="fredoka text-[32px] text-[var(--navy)] font-bold mb-6">Technical Skills</h2>
-
-      <div class="space-y-5 max-w-xl">
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium text-[var(--ink)]">HTML & CSS</span>
-            <span class="text-[var(--navy)] font-semibold">90%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="90"></div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium text-[var(--ink)]">Python</span>
-            <span class="text-[var(--navy)] font-semibold">50%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div class="progress-bar bg-[var(--pink)] h-3 rounded-full" data-progress="50"></div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium text-[var(--ink)]">Java</span>
-            <span class="text-[var(--navy)] font-semibold">70%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="70"></div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium text-[var(--ink)]">Kotlin</span>
-            <span class="text-[var(--navy)] font-semibold">60%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div class="progress-bar bg-[var(--pink)] h-3 rounded-full" data-progress="60"></div>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="font-medium text-[var(--ink)]">Network Device Configuration</span>
-            <span class="text-[var(--navy)] font-semibold">60%</span>
-          </div>
-          <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-            <div class="progress-bar bg-[var(--navy)] h-3 rounded-full" data-progress="60"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
+    <img
+        src="avatar.png"
+        class="w-[470px]
+        h-[640px]
+        object-cover
+        rounded-[35px]
+        photo-img">
 </div>
 
-<br><br><br><br>
+    <!-- Floating Card -->
+    <div
+class="floating-card
+absolute
+bottom-[-40px]
+left-[-40px]
+bg-white
+rounded-3xl
+shadow-xl
+px-8
+py-6
+z-20">
+
+        <div
+            class="text-xs
+            uppercase
+            tracking-[3px]
+            font-bold
+            text-[var(--pink)]">
+
+            Networking & Cybersecurity
+
+        </div>
+
+        <div
+            class="fredoka
+            text-3xl
+            mt-2
+            text-[var(--navy)]">
+
+            Class of 2023–2028
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-16">
+
+<div class="grid lg:grid-cols-[460px_1fr] gap-10 items-stretch">
+    <!-- LEFT : IMAGE -->
+    <div class="flex justify-center">
+
+      <div class="profile-border">
+
+    <div class="profile-glow"></div>
+
+    <div class="profile-card">
+        <img src="a2.jpg" class="profile-img">
+    </div>
+
+</div>
+
+    </div>
+    
+
+
+    <!-- RIGHT -->
+    <div class="soft-shadow rounded-3xl overflow-hidden">
+
+        <!-- HEADER -->
+        <div class="bg-[var(--pink)] text-white fredoka text-2xl px-7 py-5">
+            HỌC VẤN
+        </div>
+
+        <div class="bg-[var(--navy)] text-white p-8">
+
+            <!-- Education -->
+            <div>
+
+                <div class="text-sm opacity-80 mb-2">
+                    2023 – Hiện tại
+                </div>
+
+                <h3 class="text-xl font-bold leading-relaxed">
+
+                    VKU – Trường Đại học Công nghệ
+                    Thông tin & Truyền thông Việt - Hàn
+
+                </h3>
+
+                <p class="opacity-90 mt-2">
+
+                    Chuyên ngành:
+                    Mạng & An toàn thông tin (Kỹ sư)
+
+                </p>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="edu-divider"></div>
+
+            <!-- Skill -->
+            <div id="skills">
+
+                <h3 class="fredoka text-2xl mb-6">
+                    KỸ NĂNG CHUYÊN MÔN
+                </h3>
+
+                <div class="space-y-5">
+
+                    <!-- HTML -->
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+                            <span>HTML & CSS</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill-bg">
+                            <div class="progress-bar bg-[var(--pink)]"
+                                 data-progress="90"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Python -->
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+                            <span>Python</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="skill-bg">
+                            <div class="progress-bar bg-[var(--pink)]"
+                                 data-progress="50"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Java -->
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+                            <span>Java</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="skill-bg">
+                            <div class="progress-bar bg-[var(--pink)]"
+                                 data-progress="70"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Kotlin -->
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+                            <span>Kotlin</span>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="skill-bg">
+                            <div class="progress-bar bg-[var(--pink)]"
+                                 data-progress="60"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Network -->
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+                            <span>Network Device Configuration</span>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="skill-bg">
+                            <div class="progress-bar bg-[var(--pink)]"
+                                 data-progress="60"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="edu-divider"></div>
+
+            <!-- Bottom -->
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <!-- Language -->
+
+                <div>
+
+                    <h3 class="fredoka text-xl mb-4">
+
+                        NGÔN NGỮ
+
+                    </h3>
+
+                    <ul class="space-y-3">
+
+                        <li>
+                            <i class="fa-solid fa-language text-[var(--pink)] mr-2"></i>
+                            Tiếng Anh
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-language text-[var(--pink)] mr-2"></i>
+                            Tiếng Việt
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Soft Skill -->
+
+                <div>
+
+                    <h3 class="fredoka text-xl mb-4">
+
+                        KỸ NĂNG MỀM
+
+                    </h3>
+
+                    <div class="soft-tags">
+
+                        <span>Teamwork</span>
+                        <span>Adaptability</span>
+                        <span>Creativity</span>
+                        <span>Problem-solving</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
 
 <!-- PROJECTS SECTION -->
 <div class="bg-[var(--pink)] w-full flex justify-center items-center py-6 rounded-t-2xl shadow-md">
   <span class="fredoka text-white font-bold text-[22px] tracking-wide text-center">
-    PROJECTS I HAVE DONE
+    MỘT VÀI DỰ ÁN MÌNH ĐÃ LÀM
   </span>
 </div>
 
 <section id="projects" class="py-16 bg-[#FBF7F3]">
   <div class="max-w-9xl mx-auto px-[60px]">
     <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Dự án 1 -->
       <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
-        <img src="1.png" alt="Micasa Flower Shop" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <img src="1.png" alt="Cửa hàng hoa Micasa" class="rounded-lg mb-4 w-full h-[220px] object-cover">
         <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Micasa Flower Shop</h3>
         <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
-          An e-commerce website that allows users to shop for beautiful flower gifts for their loved ones.
-          <br><strong>Tech stack:</strong> HTML, CSS, JavaScript
+          Website thương mại điện tử cho phép người dùng mua sắm những món quà hoa tươi ý nghĩa dành tặng cho người thân yêu.
+          <br><strong>Công nghệ:</strong> HTML, CSS, JavaScript
         </p>
-        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">Xem chi tiết</a>
       </div>
 
+      <!-- Dự án 2 -->
       <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
-        <img src="2.png" alt="Fashion Shop" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <img src="2.png" alt="Cửa hàng Thời trang" class="rounded-lg mb-4 w-full h-[220px] object-cover">
         <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Fashion Shop</h3>
         <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
-          A fashion e-commerce website offering clothes, accessories, and footwear.
-          <br><strong>Tech stack:</strong> HTML, CSS, JavaScript, phpMyAdmin
+          Website thương mại điện tử chuyên cung cấp quần áo, phụ kiện thời trang và giày dép.
+          <br><strong>Công nghệ:</strong> HTML, CSS, JavaScript, phpMyAdmin
         </p>
-        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">Xem chi tiết</a>
       </div>
-     
+      
+      <!-- Dự án 3 -->
       <div class="project-card bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 fade-up">
-        <img src="3.png" alt="Ticket Booking App" class="rounded-lg mb-4 w-full h-[220px] object-cover">
+        <img src="3.png" alt="Ứng dụng Đặt vé máy bay" class="rounded-lg mb-4 w-full h-[220px] object-cover">
         <h3 class="fredoka text-[22px] text-[var(--navy)] mb-2">Flight Booking App</h3>
         <p class="text-[15px] text-[var(--ink)] mb-2 leading-relaxed">
-          An Android app that lets users search and book flights from multiple airlines with a clean and intuitive interface.
-          <br><strong>Tech stack:</strong> Kotlin, Firebase
+          Ứng dụng Android giúp người dùng tìm kiếm và đặt vé máy bay từ nhiều hãng hàng không với giao diện tối giản và trực quan.
+          <br><strong>Công nghệ:</strong> Kotlin, Firebase
         </p>
-        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">View more</a>
+        <a href="#" class="text-[var(--pink)] font-semibold hover:underline">Xem chi tiết</a>
       </div>
+
     </div>
   </div>
 </section>
@@ -246,13 +577,13 @@
     <!-- CONTACT FORM -->
     <div class="bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-xl flex flex-col justify-between opacity-0 translate-y-8 transition-all duration-1000 ease-out contact-fade">
       <div>
-        <h2 class="fredoka text-3xl font-bold mb-2 text-white">Let's Talk 💭</h2>
-        <p class="text-white/80 mb-6 text-sm">Please fill in your information below:</p>
+        <h2 class="fredoka text-3xl font-bold mb-2 text-white">Có thắc mắc gì liên hệ mình ngay nhé 💭</h2>
+<p class="text-white/80 mb-6 text-sm">Vui lòng điền thông tin của bạn vào bên dưới:</p>
 
         <form action="https://formspree.io/f/xrewybjb" method="POST" class="grid md:grid-cols-[1fr_1.3fr] gap-6">
           <div class="flex flex-col gap-4">
             <div>
-              <label class="block mb-1 text-sm font-semibold">Full Name <span class="text-[var(--pink)]">*</span></label>
+              <label class="block mb-1 text-sm font-semibold">Họ và Tên <span class="text-[var(--pink)]">*</span></label>
               <input type="text" name="Full Name" placeholder="Enter your name" required
                      class="w-full px-4 py-2 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
                      focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition" />
@@ -266,7 +597,7 @@
             </div>
 
             <div>
-              <label class="block mb-1 text-sm font-semibold">Phone</label>
+              <label class="block mb-1 text-sm font-semibold">SĐT</label>
               <input type="text" name="Phone" placeholder="Enter your phone number"
                      class="w-full px-4 py-2 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
                      focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition" />
@@ -274,7 +605,7 @@
           </div>
 
           <div class="flex flex-col h-full">
-            <label class="block mb-1 text-sm font-semibold">Message</label>
+            <label class="block mb-1 text-sm font-semibold">Tâm sự</label>
             <textarea name="Message" rows="11" placeholder="Write your message here..."
                       class="flex-grow px-4 py-3 rounded-lg border border-white/30 bg-white/10 text-white placeholder-white/60 
                       focus:outline-none focus:ring-2 focus:ring-[var(--pink)] transition resize-none h-full"></textarea>
@@ -284,7 +615,7 @@
           <div class="col-span-2 mt-8 flex justify-center">
             <button type="submit"
                     class="bg-[var(--pink)] hover:bg-[#ff85b5] text-white px-8 py-2 rounded-full font-bold transition duration-300 shadow-md flex items-center gap-2">
-              <i class="fa-solid fa-paper-plane"></i> Send Message
+              <i class="fa-solid fa-paper-plane"></i> Gửi
             </button>
           </div>
         </form>
@@ -304,21 +635,21 @@
       </div>
 
       <div class="flex items-center gap-5 bg-white/10 p-4 rounded-2xl shadow-md hover:bg-white/20 transition">
-        <div class="w-14 h-14 bg-[var(--navy)] rounded-xl flex items-center justify-center text-white text-2xl">
+        <div class="w-14 h-14 bg-[var(--pink)] rounded-xl flex items-center justify-center text-white text-2xl">
           <i class="fa-solid fa-location-dot"></i>
         </div>
         <div>
-          <div class="text-sm text-white/70">LOCATION</div>
-          <div class="text-lg font-semibold">Da Nang, Vietnam</div>
+          <div class="text-sm text-white/70">Địa chỉ</div>
+          <div class="text-lg font-semibold">Đà Nẵng, Việt Nam</div>
         </div>
       </div>
 
       <div class="flex items-center gap-5 bg-white/10 p-4 rounded-2xl shadow-md hover:bg-white/20 transition">
-        <div class="w-14 h-14 bg-white text-[var(--navy)] rounded-xl flex items-center justify-center text-2xl font-bold">
+        <div class="w-14 h-14 bg-[var(--pink)] rounded-xl flex items-center justify-center text-white text-2xl">
           <i class="fa-solid fa-phone"></i>
         </div>
         <div>
-          <div class="text-sm text-white/70">PHONE</div>
+          <div class="text-sm text-white/70">SĐT</div>
           <div class="text-lg font-semibold">+84 775457834</div>
         </div>
       </div>
@@ -514,8 +845,149 @@
       btn.classList.remove("opacity-60");
     }
   });
+
+  
 </script>
 
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+
+    /* ==========================
+       THEME
+    ========================== */
+
+    const themeBtn = document.getElementById("themeToggle");
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+        themeBtn.textContent = "☀️";
+    } else {
+        themeBtn.textContent = "🌙";
+    }
+
+    themeBtn.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+            themeBtn.textContent = "☀️";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeBtn.textContent = "🌙";
+        }
+
+    });
+
+
+    /* ==========================
+       LANGUAGE
+    ========================== */
+
+    const langBtn = document.getElementById("langToggle");
+
+    // load ngôn ngữ
+    let lang = localStorage.getItem("lang") || "vi";
+
+    if(lang === "vi"){
+        langBtn.textContent = "";
+    }else{
+        langBtn.textContent = "🌐";
+    }
+
+    langBtn.addEventListener("click",()=>{
+
+        if(lang === "vi"){
+
+            lang = "en";
+            langBtn.textContent = "🌐";
+
+        }else{
+
+            lang = "vi";
+            langBtn.textContent = "🇻🇳";
+
+        }
+
+        localStorage.setItem("lang",lang);
+
+
+    });
+
+});
+
+
+/* ==========================
+   CURSOR GLOW
+========================== */
+
+const glow = document.querySelector(".cursor-glow");
+
+window.addEventListener("mousemove",(e)=>{
+
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+
+});
+</script>
+
+<script>
+  const bubbleContainer = document.querySelector(".bubbles");
+
+for(let i = 0; i < 25; i++){
+
+    const bubble = document.createElement("span");
+    bubble.classList.add("bubble");
+
+    const size = Math.random() * 60 + 20;
+
+    bubble.style.width = size + "px";
+    bubble.style.height = size + "px";
+
+    bubble.style.left = Math.random() * 100 + "%";
+
+    bubble.style.animationDuration =
+        Math.random() * 10 + 10 + "s";
+
+    bubble.style.animationDelay =
+        Math.random() * 8 + "s";
+
+    bubbleContainer.appendChild(bubble);
+
+}
+</script>
+
+<script>
+const profile = document.querySelector(".profile-card");
+
+if(profile){
+
+    profile.addEventListener("mousemove",(e)=>{
+
+        const rect = profile.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const rotateY = ((x / rect.width) - 0.5) * 12;
+        const rotateX = ((y / rect.height) - 0.5) * -12;
+
+        profile.style.transform =
+            `perspective(900px)
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)
+             scale(1.03)`;
+
+    });
+
+    profile.addEventListener("mouseleave",()=>{
+
+        profile.style.transform="";
+
+    });
+
+}
+</script>
 
 </body>
 </html>
